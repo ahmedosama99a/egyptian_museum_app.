@@ -1,0 +1,20 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>رحلة الكاتب المصري</title><link rel="stylesheet" href="style.css"></head><body>
+<div class="stars"></div><header><nav class="wrap"><a class="brand" href="#home"><span>𓂀</span><div><b>رحلة الكاتب المصري</b><small>Hieroglyph Quest</small></div></a><div class="navlinks"><a href="#map">الخريطة</a><a href="#library">المكتبة</a><a href="#arcade">منطقة اللعب</a></div><div class="coins">🪙 <b id="coins">0</b></div></nav>
+<section id="home" class="hero wrap"><div class="hero-copy"><span class="eyebrow">مغامرة تعليمية تفاعلية</span><h1>افتح أسرار<br><em>الكتابة المقدسة</em></h1><p>تعلّم الرموز من خلال رحلة داخل المعابد. اجمع الجعارين، افتح البوابات، وارفع مستواك من متدرّب إلى كاتب ملكي.</p><div class="hero-actions"><button class="primary" data-go="map">ابدأ المغامرة <b>←</b></button><button class="glass" data-go="library">استكشف الرموز</button></div><div class="player"><div><span>المستوى <b id="level">1</b></span><span id="rank">كاتب متدرّب</span></div><div class="xp"><i id="xpbar"></i></div><small><b id="xp">0</b> / <span id="xpmax">200</span> XP</small></div></div><div class="portal"><div class="ring r1"></div><div class="ring r2"></div><div class="sun">𓆣</div><span class="float f1">𓂀</span><span class="float f2">𓅓</span><span class="float f3">𓋹</span><span class="float f4">𓇳</span></div></section></header>
+<main>
+<section id="map" class="map-section"><div class="wrap"><div class="section-head"><span>خريطة الرحلة</span><h2>طريق الكاتب الملكي</h2><p>أكمل المراحل بالترتيب، واجمع النجوم لفتح التحدي النهائي.</p></div><div class="journey">
+<div class="path"></div>
+<button class="stage active" data-stage="0"><i>𓄿</i><b>وادي الأصوات</b><small>مطابقة الرموز بالأصوات</small><span>★ ★ ★</span></button>
+<button class="stage" data-stage="1"><i>𓆣</i><b>معبد المعاني</b><small>اصطد المعنى الصحيح</small><span>☆ ☆ ☆</span></button>
+<button class="stage" data-stage="2"><i>𓇳</i><b>بوابة الذاكرة</b><small>لعبة البطاقات المتطابقة</small><span>☆ ☆ ☆</span></button>
+<button class="stage" data-stage="3"><i>𓂀</i><b>غرفة الكاتب</b><small>كوّن كلمة من الرموز</small><span>☆ ☆ ☆</span></button>
+</div></div></section>
+<section id="arcade" class="arcade wrap"><div class="section-head"><span>منطقة اللعب</span><h2>التحدي الحالي</h2></div><div id="gameShell" class="game-shell">
+<div class="game-header"><div><small id="gameWorld">وادي الأصوات</small><h3 id="gameTitle">التقط البالون الصحيح</h3></div><div class="game-stats"><span>❤️ <b id="lives">3</b></span><span>🔥 <b id="combo">0</b></span><span>⭐ <b id="score">0</b></span></div></div>
+<div id="gameArea" class="game-area"><div id="instruction" class="instruction">اضغط «ابدأ الجولة»</div></div>
+<div class="game-footer"><div class="timer"><i id="timerbar"></i></div><button id="startGame" class="primary">ابدأ الجولة</button></div></div>
+</section>
+<section id="library" class="library"><div class="wrap"><div class="section-head"><span>بردية المعرفة</span><h2>مكتبة الرموز</h2><p>اكتشف الرمز، معناه، قيمته الصوتية، ثم أضفه إلى مجموعتك.</p></div><div class="library-tools"><input id="search" placeholder="ابحث عن رمز أو معنى..."><div id="filters"><button class="active" data-filter="all">الكل</button><button data-filter="animals">حيوانات</button><button data-filter="people">أشخاص</button><button data-filter="nature">طبيعة</button><button data-filter="objects">أشياء</button></div></div><div id="grid" class="symbol-grid"></div></div></section>
+</main>
+<div id="toast" class="toast"></div><div id="modal" class="modal" hidden><div class="modal-card"><button id="closeModal">×</button><div id="modalGlyph"></div><h3 id="modalName"></h3><p id="modalMeaning"></p><span id="modalSound"></span><button id="speak" class="primary">🔊 استمع</button></div></div>
+<footer><div class="wrap"><b>𓂀 رحلة الكاتب المصري</b><span>تعلّم • العب • اكتشف</span></div></footer><script src="app.js"></script></body></html>
